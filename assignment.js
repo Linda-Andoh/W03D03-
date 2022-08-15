@@ -156,9 +156,30 @@ const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
 // console.log(whereIsWaldo);
 
 //Access and console.log "Waldo"
-console.log(whereIsWaldo[3][-1, 1][1]);
+//console.log(whereIsWaldo[3][-1, 1][1]);
 
+//..............//
 //Excited Kitten//
+//..............//
+
+//Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
+//For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
+
+const  kittyTalk = ["...human...why you taking pictures of me?...","...the catnip made me do it...","...why does the red dot always get away..." ];
+let meow = 0 ;
+for (let i =0 ; i <= 20 ; i++)
+{
+  if (i % 2 == 0){
+    meow =  Math.floor(Math.random() * 3) ;
+    console.log (kittyTalk[meow]);
+    }
+    else 
+        console.log ( "Love me, pet me! HSSSSSS!");
+
+}
 
 
+//...............//
 //Find the Median//
+//...............//
+
