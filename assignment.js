@@ -165,21 +165,41 @@ const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
 //Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
 //For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
 
-const  kittyTalk = ["...human...why you taking pictures of me?...","...the catnip made me do it...","...why does the red dot always get away..." ];
-let meow = 0 ;
-for (let i =0 ; i <= 20 ; i++)
-{
-  if (i % 2 == 0){
-    meow =  Math.floor(Math.random() * 3) ;
-    console.log (kittyTalk[meow]);
-    }
-    else 
-        console.log ( "Love me, pet me! HSSSSSS!");
+// const  kittyTalk = ["...human...why you taking pictures of me?...","...the catnip made me do it...","...why does the red dot always get away..." ];
+// let meow = 0 ;
+// for (let i =0 ; i <= 20 ; i++)
+// {
+//   if (i % 2 == 0){
+//     meow =  Math.floor(Math.random() * 3) ;
+//     console.log (kittyTalk[meow]);
+//     }
+//     else 
+//         console.log ( "Love me, pet me! HSSSSSS!");
 
-}
+// }
 
 
 //...............//
 //Find the Median//
 //...............//
 
+//Find the median number in the following numsarray, then console.log that number.
+
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+
+//Expected output:
+//=> 15
+//hint if you check the length of the array / 2, you might get not get a whole number. In which case, look into Math.floor( // something )
+
+let calculateMedian = function (arr){
+    arr.sort();
+    let median = 0;
+    let length = arr.length;
+    if (length % 2 != 0 )
+    median = arr[Math.floor(length / 2)]
+    else 
+    median = (arr[length/2]+arr[(length/2)-1]) / 2
+  return median;  
+  }
+
+console.log (calculateMedian(nums))
