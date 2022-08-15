@@ -73,7 +73,7 @@ const dart = [
 
 // Change Wolfy's hometown from "Yukon Territory" to "Gotham City".
 //wolfy.pop();
-//wolfy.push"Gotham City");
+//wolfy.push("Gotham City");
 //console.log(wolfy);
 
 // Give D'Art a second hometown by adding "Hawkins"
@@ -100,7 +100,7 @@ const dart = [
 //..................//
 //Methods, revisited//
 //..................//
-const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+//const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 //Console log: the index of Titanic
 //console.log(favMovies.indexOf("Titanic"));
 
@@ -133,15 +133,32 @@ const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle'
 // console.log your final results
 // console.log(favMovies);
 // After running the above tasks, console.log the index of "Fast and Furious" -We removed it from the array, what value do we get when we look for the index of something that is not in the array?
-console.log(favMovies.indexOf("Fast and Furious")); // the value i got was 18.
+//console.log(favMovies.indexOf("Fast and Furious")); // the value i got was 18.
 
 // Thought question: that we declared the variable favMovieswith const, and yet, we were allowed to change the array. Weird? Should we have used let?
 
 //..............//
 //Where is Waldo//
 //..............//
+//With the following multi-dimensional array
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
+//Remove Eggbert (hint look at the slice/splice method(s))
+//let index = whereIsWaldo.indexOf("Eggbert");
+//whereIsWaldo.splice(index);
+//console.log(whereIsWaldo);
 
+//Change "Neff" to "No One"
+// let index = whereIsWaldo.indexOf(index);
+// whereIsWaldo.pop(index);
+// whereIsWaldo.push("No One");
+// console.log(whereIsWaldo);
+
+//Access and console.log "Waldo"
+console.log(whereIsWaldo[3][-1, 1][1]);
 
 //Excited Kitten//
+
 
 //Find the Median//
