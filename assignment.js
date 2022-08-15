@@ -91,8 +91,57 @@ const dart = [
 //..........................//
 // Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
 // Use a for of loop (not a typo - try it out! Try a for of loop) to call toUpperCase() on each of them and print out the result.
-const ninjaTurtle = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
-for (let member of ninjaTurtle) {
-    console.log(member.toUpperCase());
-}
+// const ninjaTurtle = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+// for (let member of ninjaTurtle) {
+//     console.log(member.toUpperCase());
+// }
 
+
+//..................//
+//Methods, revisited//
+//..................//
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+//Console log: the index of Titanic
+//console.log(favMovies.indexOf("Titanic"));
+
+//use the .sortmethod Thought question: what did this do to the array? Did it permanently alter it?
+//favMovies.sort();
+
+// Use the method pop
+//favMovies.pop();
+
+// push"Guardians of the Galaxy"
+//favMovies.push("Guardians of the Galaxy");
+
+// Reverse the array
+//favMovies.reverse();
+
+// Use the shiftmethod
+//favMovies.shift();
+
+// unshift- what does it return?
+//console.log(favMovies.unshift());
+
+// splice"Django Unchained" and add "Avatar" (try finding the index of "Django Unchained", instead of counting it yourself) Thought question: did this permanently alter our array?
+//let index = favMovies.indexOf("Django Unchained");
+//favMovies.splice(index, 1, "Avatar");
+
+// slicethe last half of the array (challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it) - Thought question: did this permanently alter our array?
+
+// store the value of your slicein a variable, console.log it - Thought question: what is going on here?
+
+// console.log your final results
+// console.log(favMovies);
+// After running the above tasks, console.log the index of "Fast and Furious" -We removed it from the array, what value do we get when we look for the index of something that is not in the array?
+console.log(favMovies.indexOf("Fast and Furious")); // the value i got was 18.
+
+// Thought question: that we declared the variable favMovieswith const, and yet, we were allowed to change the array. Weird? Should we have used let?
+
+//..............//
+//Where is Waldo//
+//..............//
+
+
+//Excited Kitten//
+
+//Find the Median//
