@@ -2,29 +2,29 @@
 // Easy Going
 // .......................
 
-// for (let i = 1; i <= 20; i++) {
-//     console.log(i);
-// }
+ for (let i = 1; i <= 20; i++) {
+     console.log(i);
+ }
 
 // .......................
 // Get Even
 // .......................
-// for (let i = 0; i <= 200; i +=2 ) {
-//         console.log(i);
-//     }
+ for (let i = 0; i <= 200; i +=2 ) {
+         console.log(i);
+    }
 
 // .......................
 // Fizz Buzz
 // .......................
-// for (let i = 1; i <= 100; i++) {
-//     if (i % 3) {
-//         console.log("Fizz");
-//     }else if (i % 5) {
-//         console.log("Buzz");
-//     }else {
-//         console.log("FizzBuzz");
-//     }
-// }
+ for (let i = 1; i <= 100; i++) {
+     if (i % 3) {
+         console.log("Fizz");
+     }else if (i % 5) {
+         console.log("Buzz");
+    }else {
+         console.log("FizzBuzz");
+     }
+ }
 
 // ..................
 // Wild Wild Life
@@ -67,23 +67,23 @@ const dart = [
 
 // Plantee's Array//
 // Change Plantee's array to reflect her being a year older.
-//  let age = 5000;
-// plantee.age = ++age;
-// console.log(plantee.age);
+  let age = 5000;
+ plantee.age = ++age;
+ console.log(plantee.age);
 
 // Change Wolfy's hometown from "Yukon Territory" to "Gotham City".
-//wolfy.pop();
-//wolfy.push("Gotham City");
-//console.log(wolfy);
+wolfy.pop();
+wolfy.push("Gotham City");
+console.log(wolfy);
 
 // Give D'Art a second hometown by adding "Hawkins"
-//dart.push(`${"Hawkins"}`);
-//console.log(dart);
+dart.push(`${"Hawkins"}`);
+console.log(dart);
 
 // Porgee decides that Wolfy can't be named "Wolfy" anymore. Remove "Wolfy" from the wolfy array and replace it with "Gameboy".
-// wolfy.shift();
-// wolfy.unshift("Gameboy");
-// console.log(wolfy);
+ wolfy.shift();
+ wolfy.unshift("Gameboy");
+ console.log(wolfy);
 
 
 //..........................//
@@ -91,49 +91,49 @@ const dart = [
 //..........................//
 // Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
 // Use a for of loop (not a typo - try it out! Try a for of loop) to call toUpperCase() on each of them and print out the result.
-// const ninjaTurtle = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
-// for (let member of ninjaTurtle) {
-//     console.log(member.toUpperCase());
-// }
+ const ninjaTurtle = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+ for (let member of ninjaTurtle) {
+   console.log(member.toUpperCase());
+ }
 
 
 //..................//
 //Methods, revisited//
 //..................//
-//const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 //Console log: the index of Titanic
-//console.log(favMovies.indexOf("Titanic"));
+console.log(favMovies.indexOf("Titanic"));
 
 //use the .sortmethod Thought question: what did this do to the array? Did it permanently alter it?
-//favMovies.sort();
+favMovies.sort();
 
 // Use the method pop
-//favMovies.pop();
+favMovies.pop();
 
 // push"Guardians of the Galaxy"
-//favMovies.push("Guardians of the Galaxy");
+favMovies.push("Guardians of the Galaxy");
 
 // Reverse the array
-//favMovies.reverse();
+favMovies.reverse();
 
 // Use the shiftmethod
-//favMovies.shift();
+favMovies.shift();
 
 // unshift- what does it return?
-//console.log(favMovies.unshift());
+console.log(favMovies.unshift());
 
 // splice"Django Unchained" and add "Avatar" (try finding the index of "Django Unchained", instead of counting it yourself) Thought question: did this permanently alter our array?
-//let index = favMovies.indexOf("Django Unchained");
-//favMovies.splice(index, 1, "Avatar");
+let index = favMovies.indexOf("Django Unchained");
+favMovies.splice(index, 1, "Avatar");
 
 // slicethe last half of the array (challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it) - Thought question: did this permanently alter our array?
 
 // store the value of your slicein a variable, console.log it - Thought question: what is going on here?
 
 // console.log your final results
-// console.log(favMovies);
+ console.log(favMovies);
 // After running the above tasks, console.log the index of "Fast and Furious" -We removed it from the array, what value do we get when we look for the index of something that is not in the array?
-//console.log(favMovies.indexOf("Fast and Furious")); // the value i got was 18.
+console.log(favMovies.indexOf("Fast and Furious")); // the value i got was 18.
 
 // Thought question: that we declared the variable favMovieswith const, and yet, we were allowed to change the array. Weird? Should we have used let?
 
@@ -146,17 +146,17 @@ const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
                     ["Petunia", ["Baked Goods", "Waldo"]]];
 //Remove Eggbert (hint look at the slice/splice method(s))
 //let index = whereIsWaldo.indexOf("Eggbert");
-//whereIsWaldo.splice(index);
-//console.log(whereIsWaldo);
+whereIsWaldo.splice(index);
+console.log(whereIsWaldo);
 
 //Change "Neff" to "No One"
-// let index = whereIsWaldo.indexOf(index);
-// whereIsWaldo.pop(index);
-// whereIsWaldo.push("No One");
-// console.log(whereIsWaldo);
+ //let index = whereIsWaldo.indexOf(index);
+ whereIsWaldo.pop(index);
+ whereIsWaldo.push("No One");
+ console.log(whereIsWaldo);
 
 //Access and console.log "Waldo"
-//console.log(whereIsWaldo[3][-1, 1][1]);
+console.log(whereIsWaldo[3][-1, 1][1]);
 
 //..............//
 //Excited Kitten//
@@ -165,18 +165,18 @@ const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
 //Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
 //For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
 
-// const  kittyTalk = ["...human...why you taking pictures of me?...","...the catnip made me do it...","...why does the red dot always get away..." ];
-// let meow = 0 ;
-// for (let i =0 ; i <= 20 ; i++)
-// {
-//   if (i % 2 == 0){
-//     meow =  Math.floor(Math.random() * 3) ;
-//     console.log (kittyTalk[meow]);
-//     }
-//     else 
-//         console.log ( "Love me, pet me! HSSSSSS!");
+ const  kittyTalk = ["...human...why you taking pictures of me?...","...the catnip made me do it...","...why does the red dot always get away..." ];
+ let meow = 0 ;
+ for (let i =0 ; i <= 20 ; i++)
+ {
+   if (i % 2 == 0){
+     meow =  Math.floor(Math.random() * 3) ;
+     console.log (kittyTalk[meow]);
+     }
+     else 
+         console.log ( "Love me, pet me! HSSSSSS!");
 
-// }
+ }
 
 
 //...............//
@@ -191,15 +191,15 @@ const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,
 //=> 15
 //hint if you check the length of the array / 2, you might get not get a whole number. In which case, look into Math.floor( // something )
 
-let calculateMedian = function (arr){
-    arr.sort();
+ let calculateMedian = function (arr){
+     arr.sort();
     let median = 0;
-    let length = arr.length;
-    if (length % 2 != 0 )
-    median = arr[Math.floor(length / 2)]
-    else 
-    median = (arr[length/2]+arr[(length/2)-1]) / 2
-  return median;  
-  }
+     let length = arr.length;
+     if (length % 2 != 0 )
+     median = arr[Math.floor(length / 2)]
+     else 
+     median = (arr[length/2]+arr[(length/2)-1]) / 2
+   return median;  
+   }
 
-console.log (calculateMedian(nums))
+ console.log (calculateMedian(nums));
